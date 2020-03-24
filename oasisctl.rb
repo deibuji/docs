@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 # This script adjusts the generated output of
-# > oasisctl generate-docs --replace-underscore
+# > oasisctl generate-docs --replace-underscore-with=-
 #
 # - Replace underscore with hyphen in file names
 # - Fix headline levels (start at <h1>)
@@ -36,13 +36,20 @@ def main()
     spaces = "    "
     prev_command = ""
     first_child = false
-    # We rely on the files being in alphabetical order
-    Dir.glob(File.join(inpath, "oasisctl*.md")).each { |infile|
+    Dir.glob(File.join(inpath, "oasisctl*.md"))
+    .sort { |a,b|
+        # Should not rely on the files being in alphabetical order
+        # File extensions needs to be stripped because '-' comes before '.'
+        base_a = File.basename(a, '.md')
+        base_b = File.basename(b, '.md')
+        base_a <=> base_b
+    }
+    .each { |infile|
         base = File.basename(infile)
         base = "oasisctl-options.md" if base == "oasisctl.md"
         outfile = File.join(outpath, base.gsub('_', '-'))
         rewrite_content(infile, outfile)
-        title_arr = File.basename(infile, '.md').split('_')
+        title_arr = File.basename(infile, '.md').split(/[_-]/)
         title = command = "Options"
         if title_arr.length > 1
             title = title_arr[1..].map{|word| word.capitalize}.join(' ')
