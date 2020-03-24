@@ -93,7 +93,7 @@
           href: oasisctl-delete-project.html
         - text: Delete Role
           href: oasisctl-delete-role.html
-    - text: Generate-docs
+    - text: Generate Docs
       href: oasisctl-generate-docs.html
     - text: Get
       href: oasisctl-get.html
@@ -141,32 +141,32 @@
           href: oasisctl-list-backups.html
         - text: List Cacertificates
           href: oasisctl-list-cacertificates.html
-        - text: List Deployments
-          href: oasisctl-list-deployments.html
         - text: List Cpusizes
           href: oasisctl-list-cpusizes.html
+        - text: List Deployments
+          href: oasisctl-list-deployments.html
         - text: List Effective
           href: oasisctl-list-effective.html
         - text: List Effective Permissions
           href: oasisctl-list-effective-permissions.html
         - text: List Group
           href: oasisctl-list-group.html
-        - text: List Groups
-          href: oasisctl-list-groups.html
         - text: List Group Members
           href: oasisctl-list-group-members.html
+        - text: List Groups
+          href: oasisctl-list-groups.html
         - text: List Ipwhitelists
           href: oasisctl-list-ipwhitelists.html
         - text: List Nodesizes
           href: oasisctl-list-nodesizes.html
         - text: List Organization
           href: oasisctl-list-organization.html
-        - text: List Organizations
-          href: oasisctl-list-organizations.html
         - text: List Organization Invites
           href: oasisctl-list-organization-invites.html
         - text: List Organization Members
           href: oasisctl-list-organization-members.html
+        - text: List Organizations
+          href: oasisctl-list-organizations.html
         - text: List Permissions
           href: oasisctl-list-permissions.html
         - text: List Projects
