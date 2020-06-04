@@ -1,6 +1,6 @@
 <span class="hljs-meta">shell&gt;</span><span class="bash"> curl -X POST --header <span class="hljs-string">'accept: application/json'</span> --data-binary @- --dump - http://localhost:8529/_admin/backup/download</span> &lt;&lt;EOF
 { 
-  <span class="hljs-string">"id"</span> : <span class="hljs-string">"2020-06-04T14.53.04Z_32e62503-8bb9-4f74-a8e6-8d022e0323c1"</span>, 
+  <span class="hljs-string">"id"</span> : <span class="hljs-string">"2020-06-04T15.38.21Z_bac988a9-a601-4189-af46-368b9cf12a56"</span>, 
   <span class="hljs-string">"remoteRepository"</span> : <span class="hljs-string">"local://tmp/backups"</span>, 
   <span class="hljs-string">"config"</span> : { 
     <span class="hljs-string">"local"</span> : { 
